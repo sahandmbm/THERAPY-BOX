@@ -138,7 +138,7 @@
                 }
             
             <?php
-                $varLoc = $_COOKIE[link];
+                $varLoc = "http://api.openweathermap.org/data/2.5/weather?lat=54&lon=0.12&appid=d0a10211ea3d36b0a6423a104782130e";
                 $var2 = file_get_contents($varLoc);
                 echo "var weath=".$var2.";";
             ?>
