@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Therapy Box</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable = yes">
+    <link rel="icon" href="LOGO.jpg">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase|Nova+Mono" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <h1 id="header">Hackaton</h1>
+    
+    <!-- FORM -->
+    <form action="signup.php" method = "post" autocomplete="on" enctype="multipart/form-data">
+        <div id="input">
+            <input type="text" placeholder="Username" id="uName" name="uname"  required>
+            <input type="email" placeholder="Email" id="email" name="eml" required>
+            <input type="password" placeholder="Password" id="pass" name="psw"  required>
+            <input type="password" placeholder="Confirm Password" id="cPass" name="cpsw" required>
+        </div>
+        <input type="file" id="files" required accept="image/jpg" name="imageUpload" >
+        <label for="files" id="picSel">Add picture</label>
+        
+        <button type = "submit" onclick="check()">Register</button>
+    </form>
+    
+    <script>
+
+        function check() {
+            var firstPass = document.getElementById("pass").value;
+            var secondPass = document.getElementById("cpass").value;
+            if(secondPass !== secondPass) {
+                alert('PASSWORDS DO NOT MATCH');
+            }
+        }
+
+    </script>
+    
+    
+    
+</body>
+
+
+</html>

@@ -1,0 +1,60 @@
+body{
+    background-image: url(../Background.png);
+    background-size: cover;
+}
+
+h1{
+    color: white;
+}
+
+h2{
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+#teamName {
+    width: 50%;
+    margin: 50px 25% ;
+    height: 75px;
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: white;
+    border-bottom: 5px solid white;
+}
+
+#teamSearch{
+    width: 50%;
+    margin: 0 25%  50px 25%;
+    height: 75px;
+    background: rgba(250,250,250,.2);
+    border: 5px solid white;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+}
+
+ul li {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    background: rgba(255,255,0,.5);
+    border: 3px solid yellow;
+    border-radius: 3px;
+    text-align: center;
+    list-style: none;
+    margin: 20px;
+}
+
+ul p{
+    width: 50%;
+    margin: 50px 25% ;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    border-bottom: 5px solid white;
+}
